@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="container">
+    <h1 class="quote-title">{{billQuote}}</h1>
+    <div class="bill__items">
+      <img [src]="billPortret" alt="Bill">
+      <div class="items-text">
+        <ul class="quotes">
+          <li *ngFor="let quote of billQuotes">{{ quote }}</li>
+        </ul>
+        <ul class="links">
+          <li><a [href]="billInfo[0]">{{billInfo[0]}}</a></li>
+          <li><a [href]="billInfo[1]">{{billInfo[1]}}</a></li>
+          <li><a [href]="billInfo[2]">{{billInfo[2]}}</a></li>
+          <li><a [href]="billInfo[3]">{{billInfo[3]}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
